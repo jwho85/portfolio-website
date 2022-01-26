@@ -224,7 +224,8 @@ color: #2b2b2b;
 }
 
 #logo {
-  width: 100px;
+  width: 200px;
+  height: 56px;
 }
 
 /* start grid fallback */
@@ -404,6 +405,7 @@ td {
 .in-container {
   padding-left: 15%;
   padding-right: 15%;
+  padding-bottom: 2%;
 }
 
 .auto-margin {
