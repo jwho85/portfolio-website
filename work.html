@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,64 +8,165 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 </head>
+
 <body>
-  <header class="page-header">
-    <a href="index.html"><img src="img/logo.png" alt="julian hoover web development logo" class="page-header__item" id="logo"></a>
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="julian hoover web development logo"
+        class="page-header__item" id="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
         </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
         </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="work.html">Work</a>
         </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
   <!-- Main content -->
   <section>
     <h1>Work</h1>
     <div class="grid">
       <!-- Grid items will live here -->
       <div class="grid__item">
-        <h2>Project Title</h2>
-        <p>Lorem ipsum.</p>
-        <a href="#">See project on GitHub</a>
+        <h3>Pokedex App</h3>
+        <img src="img/pokedex-app.png" class="portfolio-item">
+        <p>The objective of this project was to build a small web application with HTML, CSS, and JavaScript that loads
+          data from an external API and enables the viewing of data points in detail.
+        </p>
+        <h4>Tech</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SASS</li>
+        </ul>
+        <a href="https://github.com/jwho85/simple-js-app">View code</a><br>
+        <a href="https://jwho85.github.io/simple-js-app/">View project</a>
       </div>
       <div class="grid__item">
-        <h2>Project Title</h2>
-        <p>Lorem ipsum.</p>
-        <a href="#">See project on GitHub</a>
+        <h3>To Do List App</h3>
+        <img src="img/to-do-list-app.png" class="portfolio-item">
+        <p>This program allows you to add items, delete items, reorder items, and mark items as done.
+        </p>
+        <h4>Tech</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+        </ul>
+        <a href="https://github.com/jwho85/to-do-list-app">View code</a><br>
+        <a href="https://jwho85.github.io/to-do-list-app/">View project</a>
       </div>
       <div class="grid__item">
-        <h2>Project Title</h2>
-        <p>Lorem ipsum.</p>
-        <a href="#">See project on GitHub</a>
+        <h3>MyFlix API</h3>
+        <p>The objective of this project was to build the server-side component of a "movies" web application. The web
+          application will provide users with access to information about different movies, directors, and genres. Users
+          will be able to sign up, update their personal information, and create a list of their favorite movies.
+        </p>
+        <h4>Tech</h4>
+        <ul>
+          <li>MongoDB</li>
+          <li>Express</li>
+          <li>Node</li>
+        </ul>
+        <a href="https://github.com/jwho85/movie_api">View code</a><br>
       </div>
       <div class="grid__item">
-        <h2>Project Title</h2>
-        <p>Lorem ipsum.</p>
-        <a href="#">See project on GitHub</a>
+        <h3>MyFlix React Client</h3>
+        <img src="img/myflix-react-client.png" class="portfolio-item">
+        <p>The objective of this project was to build the client-side for an application called myFlix based on its
+          existing server-side code (REST API and database) using React.
+        </p>
+        <h4>Tech</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Axios</li>
+          <li>React Bootstrap</li>
+          <li>React Router</li>
+        </ul>
+        <a href="https://github.com/jwho85/myFlix-client/tree/final">View code</a><br>
+        <a href="https://myflix-client-hoover.netlify.app/">View project</a>
       </div>
       <div class="grid__item">
-        <h2>Project Title</h2>
-        <p>Lorem ipsum.</p>
-        <a href="#">See project on GitHub</a>
+        <h3>Meet App</h3>
+        <img src="img/meet-app.png" class="portfolio-item">
+        <p>The objective of this project was to build a serverless, progressive web application (PWA) with React using a
+          test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming
+          events.
+        </p>
+        <h4>Tech</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>React Bootstrap</li>
+          <li>NProgress</li>
+          <li>Recharts</li>
+        </ul>
+        <a href="https://github.com/jwho85/meet">View code</a><br>
+        <a href="https://jwho85.github.io/meet/">View project</a>
       </div>
       <div class="grid__item">
-        <h2>Project Title</h2>
-        <p>Lorem ipsum.</p>
-        <a href="#">See project on GitHub</a>
+        <h3>Chat App</h3>
+        <p>The objective of this project was to build a chat app for mobile devices using React Native. The app will
+          provide users with a chat interface and options to share images and their location.
+        </p>
+        <h4>Tech</h4>
+        <ul>
+          <li>Expo</li>
+          <li>React Navigation</li>
+          <li>Gifted Chat</li>
+          <li>Firestore</li>
+          <li>AsyncStorage</li>
+          <li>NetInfo</li>
+          <li>Expo Permissions</li>
+          <li>Expo Image Picker</li>
+          <li>Expo Location</li>
+          <li>React Native Maps</li>
+        </ul>
+        <a href="https://github.com/jwho85/chat-app">View code</a><br>
+      </div>
+      <div class="grid__item">
+        <h3>MyFlix Angular Client</h3>
+        <img src="img/myflix-angular-client.png" class="portfolio-item">
+        <p>The objective of this project was to build the client-side for an application called myFlix based on its
+          existing server-side code (REST API and database), with supporting documentation.
+        </p>
+        <h4>Tech</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Angular</li>
+          <li>Angular Material</li>
+          <li>Angular Router</li>
+        </ul>
+        <a href="https://github.com/jwho85/myFlix-Angular-client/tree/final">View code</a><br>
+        <a href="https://jwho85.github.io/myFlix-Angular-client/welcome">View project</a>
       </div>
     </div>
   </section>
@@ -74,9 +176,17 @@
     <div class="social-media">
       <a href="https://github.com/jwho85"><img src="img/github.svg" class="footer-icons" alt="Github logo"></a>
       <!--<img src="img/twitter.svg" class="footer-icons" alt="Twitter logo">-->
-      <a href="https://www.linkedin.com/in/julianhoover/"><img src="img/linkedin.svg" class="footer-icons" alt="LinkedIn logo"></a>
+      <a href="https://www.linkedin.com/in/julianhoover/"><img src="img/linkedin.svg" class="footer-icons"
+          alt="LinkedIn logo"></a>
     </div>
   </footer>
   <script src="js/tota11y.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </body>
+
 </html>
