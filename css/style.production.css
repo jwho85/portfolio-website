@@ -68,6 +68,8 @@ h6 {
   color: #a22c29;
 }
 
+/* start h1 animations */
+
 h1 {
   -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
@@ -134,6 +136,10 @@ h1 {
   }
 }
 
+/* end h1 animations */
+
+/* start link css */
+
 a {
   color: #a22c29 !important;
   text-decoration: none !important;
@@ -153,6 +159,10 @@ a:active {
   /* selected link */
   font-weight: 600 !important;
 }
+
+/* end link css */
+
+/* start button css */
 
 .button {
   /* overwrites browser defaults */
@@ -197,17 +207,25 @@ color: #2b2b2b;
 }
 */
 
-img {
+/* end button css */
+
+/* start image effects */
+
+img:not(.portfolio-item) {
   transition: transform .2s;
 }
 
-img:hover {
+img:not(.portfolio-item):hover {
   transform: scale(1.1);
 }
+
+/* end image effects */
 
 ul {
   padding: inherit;
 }
+
+/* start navigation css */
 
 .navigation-list__item--active {
   font-weight: 600 !important;
@@ -235,10 +253,14 @@ ul {
   height: 56px;
 }
 
+/* end navigation css */
+
 .profile__portrait {
   width: 250px;
   border-radius: 50%;
-
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .profile {
@@ -246,6 +268,8 @@ ul {
   margin: 0 auto;
   margin-top: 5%;
 }
+
+/* start footer css */
 
 .page-footer {
   clear: both;
@@ -264,12 +288,15 @@ ul {
   height: 30px;
 }
 
+/* end footer css */
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 20px;
+  border-bottom: 1px solid #a22c29;
 }
 
 .page-header__item {
@@ -309,11 +336,166 @@ ul {
   padding-top: 5%;
 }
 
+/* start skill counter */
+
+.skills-wrapper {
+  width: 50%;
+  margin: 0px auto;
+  background: #efefef;
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  transition: transform .2s;
+}
+
+.skills-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.skills-container {
+  width: 100%;
+  padding: 30px 30px 50px;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bar {
+  position: relative;
+  border: 2px solid #a22c29;
+  border-radius: 20px;
+}
+
+.bar div {
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #a22c29;
+}
+
+#html-bar {
+  animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+#css-bar {
+  animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+#sass-bar {
+  animation: sass-fill 2s forwards;
+}
+
+@keyframes sass-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#bootstrap-bar {
+  animation: bootstrap-fill 2s forwards;
+}
+
+@keyframes bootstrap-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#javascript-bar {
+  animation: javascript-fill 2s forwards;
+}
+
+@keyframes javascript-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#jQuery-bar {
+  animation: jQuery-fill 2s forwards;
+}
+
+@keyframes jQuery-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#react-bar {
+  animation: react-fill 2s forwards;
+}
+
+@keyframes react-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#angular-bar {
+  animation: angular-fill 2s forwards;
+}
+
+@keyframes angular-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#wordpress-bar {
+  animation: wordpress-fill 2s forwards;
+}
+
+@keyframes wordpress-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+#hubspot-bar {
+  animation: hubspot-fill 2s forwards;
+}
+
+@keyframes hubspot-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+/* end skill counter */
+
 /* start grid fallback */
+
 .grid__item {
   display: inline-block;
   width: 33%;
   padding: 3%;
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  transition: transform .2s;
+}
+
+.grid__item:hover {
+  transform: scale(1.02);
 }
 
 /* end grid fallback */
@@ -375,13 +557,11 @@ ul {
   }
 }
 
-.page-header {
-  border-bottom: 1px solid #a22c29;
-}
-
 .centered {
   text-align: center;
 }
+
+/* start about page animations */
 
 @-webkit-keyframes color-change {
   0% {
@@ -472,4 +652,12 @@ ul {
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* end about page animations */
+
+@media all and (max-width: 600px) {
+  .skills-wrapper {
+    width: 75%;
+  }
 }
