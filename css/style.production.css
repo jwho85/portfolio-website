@@ -322,6 +322,10 @@ ul {
   margin: auto;
 }
 
+.about-section {
+  padding-bottom: 2% !important;
+}
+
 .about-table {
   background: #efefef;
   width: 50%;
