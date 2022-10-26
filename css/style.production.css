@@ -222,7 +222,7 @@ img:not(.portfolio-item):hover {
 /* end image effects */
 
 ul {
-  padding: inherit;
+  padding-left: 15px;
 }
 
 /* start navigation css */
